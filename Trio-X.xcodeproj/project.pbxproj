@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		E82C6FBC2CA7281800DF9A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E82C6FA22CA7281600DF9A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E82C6FA92CA7281600DF9A09;
+			remoteInfo = "Trio-X";
+		};
+		E82C6FC62CA7281800DF9A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E82C6FA22CA7281600DF9A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E82C6FA92CA7281600DF9A09;
+			remoteInfo = "Trio-X";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E82C6FAA2CA7281600DF9A09 /* Trio-X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trio-X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82C6FBB2CA7281800DF9A09 /* Trio-XTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trio-XTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82C6FC52CA7281800DF9A09 /* Trio-XUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trio-XUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		E82C6FAC2CA7281600DF9A09 /* Trio-X */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Trio-X";
+			sourceTree = "<group>";
+		};
+		E82C6FBE2CA7281800DF9A09 /* Trio-XTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Trio-XTests";
+			sourceTree = "<group>";
+		};
+		E82C6FC82CA7281800DF9A09 /* Trio-XUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Trio-XUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E82C6FA72CA7281600DF9A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82C6FB82CA7281800DF9A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82C6FC22CA7281800DF9A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E82C6FA12CA7281600DF9A09 = {
+			isa = PBXGroup;
+			children = (
+				E82C6FAC2CA7281600DF9A09 /* Trio-X */,
+				E82C6FBE2CA7281800DF9A09 /* Trio-XTests */,
+				E82C6FC82CA7281800DF9A09 /* Trio-XUITests */,
+				E82C6FAB2CA7281600DF9A09 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E82C6FAB2CA7281600DF9A09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E82C6FAA2CA7281600DF9A09 /* Trio-X.app */,
+				E82C6FBB2CA7281800DF9A09 /* Trio-XTests.xctest */,
+				E82C6FC52CA7281800DF9A09 /* Trio-XUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E82C6FA92CA7281600DF9A09 /* Trio-X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82C6FCF2CA7281800DF9A09 /* Build configuration list for PBXNativeTarget "Trio-X" */;
+			buildPhases = (
+				E82C6FA62CA7281600DF9A09 /* Sources */,
+				E82C6FA72CA7281600DF9A09 /* Frameworks */,
+				E82C6FA82CA7281600DF9A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E82C6FAC2CA7281600DF9A09 /* Trio-X */,
+			);
+			name = "Trio-X";
+			packageProductDependencies = (
+			);
+			productName = "Trio-X";
+			productReference = E82C6FAA2CA7281600DF9A09 /* Trio-X.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E82C6FBA2CA7281800DF9A09 /* Trio-XTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82C6FD22CA7281800DF9A09 /* Build configuration list for PBXNativeTarget "Trio-XTests" */;
+			buildPhases = (
+				E82C6FB72CA7281800DF9A09 /* Sources */,
+				E82C6FB82CA7281800DF9A09 /* Frameworks */,
+				E82C6FB92CA7281800DF9A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E82C6FBD2CA7281800DF9A09 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E82C6FBE2CA7281800DF9A09 /* Trio-XTests */,
+			);
+			name = "Trio-XTests";
+			packageProductDependencies = (
+			);
+			productName = "Trio-XTests";
+			productReference = E82C6FBB2CA7281800DF9A09 /* Trio-XTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E82C6FC42CA7281800DF9A09 /* Trio-XUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82C6FD52CA7281800DF9A09 /* Build configuration list for PBXNativeTarget "Trio-XUITests" */;
+			buildPhases = (
+				E82C6FC12CA7281800DF9A09 /* Sources */,
+				E82C6FC22CA7281800DF9A09 /* Frameworks */,
+				E82C6FC32CA7281800DF9A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E82C6FC72CA7281800DF9A09 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E82C6FC82CA7281800DF9A09 /* Trio-XUITests */,
+			);
+			name = "Trio-XUITests";
+			packageProductDependencies = (
+			);
+			productName = "Trio-XUITests";
+			productReference = E82C6FC52CA7281800DF9A09 /* Trio-XUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E82C6FA22CA7281600DF9A09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E82C6FA92CA7281600DF9A09 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					E82C6FBA2CA7281800DF9A09 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = E82C6FA92CA7281600DF9A09;
+					};
+					E82C6FC42CA7281800DF9A09 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = E82C6FA92CA7281600DF9A09;
+					};
+				};
+			};
+			buildConfigurationList = E82C6FA52CA7281600DF9A09 /* Build configuration list for PBXProject "Trio-X" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E82C6FA12CA7281600DF9A09;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E82C6FAB2CA7281600DF9A09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E82C6FA92CA7281600DF9A09 /* Trio-X */,
+				E82C6FBA2CA7281800DF9A09 /* Trio-XTests */,
+				E82C6FC42CA7281800DF9A09 /* Trio-XUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E82C6FA82CA7281600DF9A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82C6FB92CA7281800DF9A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82C6FC32CA7281800DF9A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E82C6FA62CA7281600DF9A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82C6FB72CA7281800DF9A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82C6FC12CA7281800DF9A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E82C6FBD2CA7281800DF9A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E82C6FA92CA7281600DF9A09 /* Trio-X */;
+			targetProxy = E82C6FBC2CA7281800DF9A09 /* PBXContainerItemProxy */;
+		};
+		E82C6FC72CA7281800DF9A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E82C6FA92CA7281600DF9A09 /* Trio-X */;
+			targetProxy = E82C6FC62CA7281800DF9A09 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E82C6FCD2CA7281800DF9A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E82C6FCE2CA7281800DF9A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E82C6FD02CA7281800DF9A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Trio-X/Trio_X.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trio-X/Preview Content\"";
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kunalyelne.Trio-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E82C6FD12CA7281800DF9A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Trio-X/Trio_X.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trio-X/Preview Content\"";
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kunalyelne.Trio-X";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E82C6FD32CA7281800DF9A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kunalyelne.Trio-XTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trio-X.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trio-X";
+			};
+			name = Debug;
+		};
+		E82C6FD42CA7281800DF9A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kunalyelne.Trio-XTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trio-X.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trio-X";
+			};
+			name = Release;
+		};
+		E82C6FD62CA7281800DF9A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kunalyelne.Trio-XUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Trio-X";
+			};
+			name = Debug;
+		};
+		E82C6FD72CA7281800DF9A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.kunalyelne.Trio-XUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Trio-X";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E82C6FA52CA7281600DF9A09 /* Build configuration list for PBXProject "Trio-X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82C6FCD2CA7281800DF9A09 /* Debug */,
+				E82C6FCE2CA7281800DF9A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E82C6FCF2CA7281800DF9A09 /* Build configuration list for PBXNativeTarget "Trio-X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82C6FD02CA7281800DF9A09 /* Debug */,
+				E82C6FD12CA7281800DF9A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E82C6FD22CA7281800DF9A09 /* Build configuration list for PBXNativeTarget "Trio-XTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82C6FD32CA7281800DF9A09 /* Debug */,
+				E82C6FD42CA7281800DF9A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E82C6FD52CA7281800DF9A09 /* Build configuration list for PBXNativeTarget "Trio-XUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82C6FD62CA7281800DF9A09 /* Debug */,
+				E82C6FD72CA7281800DF9A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E82C6FA22CA7281600DF9A09 /* Project object */;
+}
