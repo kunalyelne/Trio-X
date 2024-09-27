@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Trio_XApp: App {
+struct TrioApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
