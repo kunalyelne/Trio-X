@@ -12,7 +12,7 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: ProcessMonitoringView( ProcessMonitoringViewModel(MainRepository()))) {
                     Label("Process Monitoring", systemImage: "gearshape")
                 }
                 NavigationLink(destination: ContentView()) {
