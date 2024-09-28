@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E82C6FF72CA85BCC00DF9A09 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E82C6FF62CA85BCC00DF9A09 /* Swinject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E82C6FBC2CA7281800DF9A09 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82C6FF72CA85BCC00DF9A09 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = "Trio-X";
 			packageProductDependencies = (
+				E82C6FF62CA85BCC00DF9A09 /* Swinject */,
 			);
 			productName = "Trio-X";
 			productReference = E82C6FAA2CA7281600DF9A09 /* Trio-X.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = E82C6FA12CA7281600DF9A09;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				E82C6FF52CA85BCC00DF9A09 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = E82C6FAB2CA7281600DF9A09 /* Products */;
 			projectDirPath = "";
@@ -549,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E82C6FF52CA85BCC00DF9A09 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E82C6FF62CA85BCC00DF9A09 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E82C6FF52CA85BCC00DF9A09 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E82C6FA22CA7281600DF9A09 /* Project object */;
 }

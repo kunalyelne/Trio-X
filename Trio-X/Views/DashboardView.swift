@@ -5,14 +5,17 @@
 //  Created by Kunal Yelne on 27/09/24.
 //
 
-import Foundation
 import SwiftUI
+import Swinject
 
 struct DashboardView: View {
+    
+    @Environment(\.diContainer) private var diContainer: Container
+    
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: ProcessMonitoringView( ProcessMonitoringViewModel(MainRepository()))) {
+                NavigationLink(destination: ProcessMonitoringView(diContainer.resolve(ProcessMonitoringViewModel.self)!)) {
                     Label("Process Monitoring", systemImage: "gearshape")
                 }
                 NavigationLink(destination: ContentView()) {

@@ -43,5 +43,7 @@ struct ProcessMonitoringView: View {
 }
 
 #Preview {
-    ProcessMonitoringView(ProcessMonitoringViewModel(MainRepository()))
+    let container = AppDIContainer().container
+    let processMonitoringViewModel = container.resolve(ProcessMonitoringViewModel.self)!
+    return ProcessMonitoringView(processMonitoringViewModel)
 }
