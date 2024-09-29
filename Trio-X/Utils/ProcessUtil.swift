@@ -8,14 +8,16 @@
 import Foundation
 import AppKit
 import OSLog
+import ServiceManagement
 
-class ProcessInfoUtil {
+class ProcessUtil {
     
-    public static let shared = ProcessInfoUtil()
+    public static let shared = ProcessUtil()
     
     private init() {}
 
-    func fetchRunningProcesses() async -> Result<[ProcessInfo], DataRequestError> {
+    /// Fetch all running process in the system
+    func fetchRunningProcesses() async -> Result<[ProcessInfo], ProcessUtilError> {
         var processList: [ProcessInfo] = []
         
         let task = Process()
@@ -53,6 +55,7 @@ class ProcessInfoUtil {
         return .success(processList)
     }
 
+    /// Returns the app icon for the running process else default icon
     private func getAppIcon(forPID pid: pid_t) -> NSImage {
         // Retrieve the running application using the PID
         if let runningApp = NSRunningApplication(processIdentifier: pid) {
@@ -63,9 +66,51 @@ class ProcessInfoUtil {
         // Return a system-provided application icon as a fallback
         return NSImage(named: NSImage.applicationIconName) ?? NSImage()
     }
+    
+    /// Terminates the given process PID
+    func terminateProcess(_ pid: Int) async -> Result<Bool, ProcessUtilError> {
+        if !isHelperToolInstalled() {
+            installHelperTool()
+        }
+        let xpcClient = XPCClient()
+        let result = await xpcClient.terminateProcess(pid: pid)
+        if result {
+            return .success(true)
+        } else {
+            return .failure(.ProcessTerminationFailed)
+        }
+    }
+    
+    
+    /// Utility method to check whether the helper is installed or not
+    func isHelperToolInstalled() -> Bool {
+        // Specify the path to the helper tool
+        let helperToolPath = "/Library/PrivilegedHelperTools/io.github.kunalyelne.HelperTool"
+        
+        // Check if the helper tool exists at the specified path
+        return FileManager.default.fileExists(atPath: helperToolPath)
+    }
+    
+    /// Installs the helper tool
+    func installHelperTool() {
+        // Attempt to register the helper tool using AMPService
+        let helperService = SMAppService.mainApp
+        
+        do {
+            // Attempt to register (install) the helper tool
+            try helperService.register()
+            print("Helper tool installed successfully")
+        } catch {
+            // Handle any errors during registration
+            print("Failed to install helper tool: \(error.localizedDescription)")
+        }
+    }
+
 }
 
-enum DataRequestError: Error {
+/// Process Utis related error
+enum ProcessUtilError: Error {
     case OperationNotpermitted(Error)
+    case ProcessTerminationFailed
     case UnknownError(Error)
 }

@@ -6,7 +6,8 @@
 //
 
 protocol Repository {
-    func fetchProcessInfoList() async -> Result<[ProcessInfo], DataRequestError>
+    func fetchProcessInfoList() async -> Result<[ProcessInfo], ProcessUtilError>
     func writeLogToFile(_ log: String) async -> Result<Bool, LogFileUtilsError>
     func openLogFileInFinder()
+    func terminateProcess(with pid: Int) async -> Result<Bool, ProcessUtilError>
 }

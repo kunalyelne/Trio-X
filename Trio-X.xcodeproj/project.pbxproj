@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E82C6FF72CA85BCC00DF9A09 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = E82C6FF62CA85BCC00DF9A09 /* Swinject */; };
+		E82C701A2CA93F2B00DF9A09 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82C70192CA93F2B00DF9A09 /* ServiceManagement.framework */; };
+		E82C70432CA94C5E00DF9A09 /* HelperTool.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = E82C70372CA94C5E00DF9A09 /* HelperTool.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,17 +27,60 @@
 			remoteGlobalIDString = E82C6FA92CA7281600DF9A09;
 			remoteInfo = "Trio-X";
 		};
+		E82C70412CA94C5E00DF9A09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E82C6FA22CA7281600DF9A09 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E82C70362CA94C5E00DF9A09;
+			remoteInfo = HelperTool;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E82C70322CA94BDA00DF9A09 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				E82C70432CA94C5E00DF9A09 /* HelperTool.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E82C6FAA2CA7281600DF9A09 /* Trio-X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trio-X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82C6FBB2CA7281800DF9A09 /* Trio-XTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trio-XTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82C6FC52CA7281800DF9A09 /* Trio-XUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trio-XUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82C70192CA93F2B00DF9A09 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		E82C70372CA94C5E00DF9A09 /* HelperTool.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = HelperTool.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E82C70442CA94C5E00DF9A09 /* Exceptions for "HelperTool" folder in "HelperTool" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E82C70362CA94C5E00DF9A09 /* HelperTool */;
+		};
+		E82C70492CA94C8500DF9A09 /* Exceptions for "Trio-X" folder in "HelperTool" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Models/Protocols/HelperToolProtocol.swift,
+			);
+			target = E82C70362CA94C5E00DF9A09 /* HelperTool */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E82C6FAC2CA7281600DF9A09 /* Trio-X */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E82C70492CA94C8500DF9A09 /* Exceptions for "Trio-X" folder in "HelperTool" target */,
+			);
 			path = "Trio-X";
 			sourceTree = "<group>";
 		};
@@ -49,6 +94,14 @@
 			path = "Trio-XUITests";
 			sourceTree = "<group>";
 		};
+		E82C70382CA94C5E00DF9A09 /* HelperTool */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E82C70442CA94C5E00DF9A09 /* Exceptions for "HelperTool" folder in "HelperTool" target */,
+			);
+			path = HelperTool;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82C701A2CA93F2B00DF9A09 /* ServiceManagement.framework in Frameworks */,
 				E82C6FF72CA85BCC00DF9A09 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +128,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E82C70342CA94C5E00DF9A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -83,6 +144,8 @@
 				E82C6FAC2CA7281600DF9A09 /* Trio-X */,
 				E82C6FBE2CA7281800DF9A09 /* Trio-XTests */,
 				E82C6FC82CA7281800DF9A09 /* Trio-XUITests */,
+				E82C70382CA94C5E00DF9A09 /* HelperTool */,
+				E82C70182CA93F2A00DF9A09 /* Frameworks */,
 				E82C6FAB2CA7281600DF9A09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,8 +156,17 @@
 				E82C6FAA2CA7281600DF9A09 /* Trio-X.app */,
 				E82C6FBB2CA7281800DF9A09 /* Trio-XTests.xctest */,
 				E82C6FC52CA7281800DF9A09 /* Trio-XUITests.xctest */,
+				E82C70372CA94C5E00DF9A09 /* HelperTool.xpc */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E82C70182CA93F2A00DF9A09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E82C70192CA93F2B00DF9A09 /* ServiceManagement.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,10 +179,12 @@
 				E82C6FA62CA7281600DF9A09 /* Sources */,
 				E82C6FA72CA7281600DF9A09 /* Frameworks */,
 				E82C6FA82CA7281600DF9A09 /* Resources */,
+				E82C70322CA94BDA00DF9A09 /* Embed XPC Services */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E82C70422CA94C5E00DF9A09 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				E82C6FAC2CA7281600DF9A09 /* Trio-X */,
@@ -169,6 +243,28 @@
 			productReference = E82C6FC52CA7281800DF9A09 /* Trio-XUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E82C70362CA94C5E00DF9A09 /* HelperTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E82C70452CA94C5E00DF9A09 /* Build configuration list for PBXNativeTarget "HelperTool" */;
+			buildPhases = (
+				E82C70332CA94C5E00DF9A09 /* Sources */,
+				E82C70342CA94C5E00DF9A09 /* Frameworks */,
+				E82C70352CA94C5E00DF9A09 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E82C70382CA94C5E00DF9A09 /* HelperTool */,
+			);
+			name = HelperTool;
+			packageProductDependencies = (
+			);
+			productName = HelperTool;
+			productReference = E82C70372CA94C5E00DF9A09 /* HelperTool.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +285,9 @@
 					E82C6FC42CA7281800DF9A09 = {
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = E82C6FA92CA7281600DF9A09;
+					};
+					E82C70362CA94C5E00DF9A09 = {
+						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
@@ -212,6 +311,7 @@
 				E82C6FA92CA7281600DF9A09 /* Trio-X */,
 				E82C6FBA2CA7281800DF9A09 /* Trio-XTests */,
 				E82C6FC42CA7281800DF9A09 /* Trio-XUITests */,
+				E82C70362CA94C5E00DF9A09 /* HelperTool */,
 			);
 		};
 /* End PBXProject section */
@@ -232,6 +332,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E82C6FC32CA7281800DF9A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E82C70352CA94C5E00DF9A09 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -262,6 +369,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E82C70332CA94C5E00DF9A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -274,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = E82C6FA92CA7281600DF9A09 /* Trio-X */;
 			targetProxy = E82C6FC62CA7281800DF9A09 /* PBXContainerItemProxy */;
+		};
+		E82C70422CA94C5E00DF9A09 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E82C70362CA94C5E00DF9A09 /* HelperTool */;
+			targetProxy = E82C70412CA94C5E00DF9A09 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +637,50 @@
 			};
 			name = Release;
 		};
+		E82C70462CA94C5E00DF9A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HelperTool/HelperTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelperTool/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HelperTool;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kunalyelne.HelperTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E82C70472CA94C5E00DF9A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HelperTool/HelperTool.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J64WKVQ9QY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HelperTool/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HelperTool;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kunalyelne.HelperTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +716,15 @@
 			buildConfigurations = (
 				E82C6FD62CA7281800DF9A09 /* Debug */,
 				E82C6FD72CA7281800DF9A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E82C70452CA94C5E00DF9A09 /* Build configuration list for PBXNativeTarget "HelperTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E82C70462CA94C5E00DF9A09 /* Debug */,
+				E82C70472CA94C5E00DF9A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

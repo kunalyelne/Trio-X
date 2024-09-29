@@ -26,6 +26,9 @@ class AppDIContainer {
         container.register(FileIntegrityViewModel.self) { r in
             FileIntegrityViewModel(r.resolve(Repository.self)!)
         }
+        container.register(SecurityPrivilegesViewModel.self) { r in
+            SecurityPrivilegesViewModel(r.resolve(Repository.self)!)
+        }
     }
 }
 

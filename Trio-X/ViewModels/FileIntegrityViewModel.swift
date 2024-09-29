@@ -20,7 +20,7 @@ class FileIntegrityViewModel: ObservableObject {
         self.mainRepository = mainRepository
     }
     
-    
+    /// Statrts monitoring the given directory
     func startMonitoringGivenPath(directoryPath: String) {
         guard !directoryPath.isEmpty else {
             logMessages.append("Please enter a valid directory path.")
@@ -51,12 +51,14 @@ class FileIntegrityViewModel: ObservableObject {
         isMonitoring = true
     }
     
+    /// Stops monitoring the supervised directory
     func stopMonitoring() {
         monitor?.stop() // Stop the monitoring
         monitor = nil
         isMonitoring = false
     }
     
+    /// Opens Log file in finder
     func openLogFileInFinder() {
         self.mainRepository.openLogFileInFinder()
     }

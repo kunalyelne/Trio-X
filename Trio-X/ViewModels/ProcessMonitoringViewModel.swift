@@ -18,22 +18,23 @@ class ProcessMonitoringViewModel: ObservableObject {
         self.mainRepository = mainRepository
     }
     
+    /// Fetches all the running process in the system
     func listRunningProcesses() async {
         // Update the data request state to .Loading
         await MainActor.run { dataRequestState = .Loading }
         
         // Fetch all running processes data
-        let result: Result<[ProcessInfo], DataRequestError> = await mainRepository.fetchProcessInfoList()
+        let result: Result<[ProcessInfo], ProcessUtilError> = await mainRepository.fetchProcessInfoList()
         
         // Ensure the update to view happens on the main thread
         await MainActor.run {
             switch result {
                 case .success(let processInfoList):
-                    // Data fetched successfully, return data
+                    // Process fetched successfully, return data
                     self.processInfo = processInfoList
                     dataRequestState = .Success
                 case .failure(let dataRequestError):
-                    // Error occurred while fetching data, return error message
+                    // Error occurred while fetching process, return error message
                     dataRequestState = .Error(message: dataRequestError.localizedDescription)
             }
         }

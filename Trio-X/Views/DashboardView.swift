@@ -21,7 +21,7 @@ struct DashboardView: View {
                 NavigationLink(destination: FileIntegrityView(diContainer.resolve(FileIntegrityViewModel.self)!)) {
                     Label("File Integrity Check", systemImage: "folder")
                 }
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: SecurityPrivilegesView(diContainer.resolve(SecurityPrivilegesViewModel.self)!)) {
                     Label("Security Privileges", systemImage: "shield")
                 }
             }

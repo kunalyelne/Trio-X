@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>io.github.kunalyelne.HelperTool</string> <!-- Your Helper Tool's Bundle Identifier -->
+
+    <key>CFBundleName</key>
+    <string>HelperTool</string>
+
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+
+    <key>XPCService</key>
+    <dict>
+        <key>ServiceType</key>
+        <string>Application</string>
+        <key>MachServiceName</key>
+        <string>io.github.kunalyelne.HelperTool</string> <!-- Match your Bundle Identifier -->
+    </dict>
+
+    <key>LSBackgroundOnly</key>
+    <true/> <!-- This indicates that the helper tool should run in the background -->
+
+    <key>NSPrincipalClass</key>
+    <string>NSXPCListener</string>
+</dict>
+</plist>

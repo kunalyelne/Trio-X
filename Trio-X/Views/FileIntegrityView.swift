@@ -27,6 +27,7 @@ struct FileIntegrityView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
+            // Button to start monitoring the given directory
             Button(fileIntegrityViewModel.isMonitoring ? "Stop Monitoring" : "Start Monitoring") {
                 if fileIntegrityViewModel.isMonitoring {
                     fileIntegrityViewModel.stopMonitoring()
@@ -53,7 +54,7 @@ struct FileIntegrityView: View {
                     fileIntegrityViewModel.openLogFileInFinder()
                 }
                 .padding()
-                .disabled(fileIntegrityViewModel.logMessages.isEmpty) // Disable button if path is empty
+                .disabled(fileIntegrityViewModel.logMessages.isEmpty) // Disable button until the logs are written to the disk
             }
         }
         .padding()
