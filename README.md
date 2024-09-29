@@ -6,12 +6,21 @@ Trio-X is a macOS application written in Swift, providing essential security-rel
 
 ### 1. Process Monitoring
 The app lists all running processes, including their Process ID (PID) and name, using the `ps` command. It includes functionality to retrieve the appropriate app icon for each process. The `fetchRunningProcesses()` method manages the retrieval of process details, while `getAppIcon(forPID:)` assigns icons.
+<div style="align:center">
+  <img src ="/Images/Process-Monitoring.png"/>
+</div>
 
 ### 2. File Integrity Check
 The app monitors specified directories for real-time file system changes, such as file creation, modification, deletion, or renaming. The `FileMonitor` class, using the `FSEventStream` API, logs all detected changes along with a timestamp and detailed event description.
+<div style="align:center">
+  <img src ="/Images/File-Integrity.png"/>
+</div>
 
 ### 3. Process Termination with Elevated Privileges
 The app enables the termination of processes by PID with the help of the `ServiceManagement` framework and the `PrivilegedHelperTools` helper tool. Elevated privileges are securely handled using `SMAppService`. The app requests these privileges only when required, and the helper tool ensures the correct permissions are granted to perform privileged actions.
+<div style="align:center">
+  <img src ="/Images/Secuirty-Feature.png"/>
+</div>
 
 ## Key Security Considerations
 - **Elevated Privileges with `SMAppService`**: The app uses `SMAppService` and `ServiceManagement` to securely handle privilege escalation when terminating processes. The helper tool, `PrivilegedHelperTools`, manages the necessary root-level access.
