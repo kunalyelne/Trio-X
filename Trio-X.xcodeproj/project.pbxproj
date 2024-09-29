@@ -102,6 +102,11 @@
 			path = HelperTool;
 			sourceTree = "<group>";
 		};
+		E82C704E2CA96ED800DF9A09 /* Images */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +146,7 @@
 		E82C6FA12CA7281600DF9A09 = {
 			isa = PBXGroup;
 			children = (
+				E82C704E2CA96ED800DF9A09 /* Images */,
 				E82C6FAC2CA7281600DF9A09 /* Trio-X */,
 				E82C6FBE2CA7281800DF9A09 /* Trio-XTests */,
 				E82C6FC82CA7281800DF9A09 /* Trio-XUITests */,
@@ -257,6 +263,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				E82C70382CA94C5E00DF9A09 /* HelperTool */,
+				E82C704E2CA96ED800DF9A09 /* Images */,
 			);
 			name = HelperTool;
 			packageProductDependencies = (
