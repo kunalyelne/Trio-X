@@ -18,7 +18,7 @@ struct DashboardView: View {
                 NavigationLink(destination: ProcessMonitoringView(diContainer.resolve(ProcessMonitoringViewModel.self)!)) {
                     Label("Process Monitoring", systemImage: "gearshape")
                 }
-                NavigationLink(destination: ContentView()) {
+                NavigationLink(destination: FileIntegrityView(diContainer.resolve(FileIntegrityViewModel.self)!)) {
                     Label("File Integrity Check", systemImage: "folder")
                 }
                 NavigationLink(destination: ContentView()) {

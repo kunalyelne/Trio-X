@@ -23,6 +23,9 @@ class AppDIContainer {
         container.register(ProcessMonitoringViewModel.self) { r in
             ProcessMonitoringViewModel(r.resolve(Repository.self)!)
         }
+        container.register(FileIntegrityViewModel.self) { r in
+            FileIntegrityViewModel(r.resolve(Repository.self)!)
+        }
     }
 }
 

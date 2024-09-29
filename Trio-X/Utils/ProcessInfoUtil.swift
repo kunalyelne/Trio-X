@@ -53,7 +53,7 @@ class ProcessInfoUtil {
         return .success(processList)
     }
 
-    func getAppIcon(forPID pid: pid_t) -> NSImage {
+    private func getAppIcon(forPID pid: pid_t) -> NSImage {
         // Retrieve the running application using the PID
         if let runningApp = NSRunningApplication(processIdentifier: pid) {
             // Get the application icon, if available

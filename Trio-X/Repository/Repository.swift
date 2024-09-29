@@ -5,8 +5,8 @@
 //  Created by Kunal Yelne on 28/09/24.
 //
 
-import Foundation
-
 protocol Repository {
     func fetchProcessInfoList() async -> Result<[ProcessInfo], DataRequestError>
+    func writeLogToFile(_ log: String) async -> Result<Bool, LogFileUtilsError>
+    func openLogFileInFinder()
 }
